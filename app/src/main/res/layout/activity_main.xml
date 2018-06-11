@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teamName_textview_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="Team A"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/score_textview_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamName_textview_a"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textSize="32dp" />
+
+
+            <Button
+                android:id="@+id/two_point_button_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/score_textview_a"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="displayA"
+                android:text="+ 2 pts!" />
+
+            <Button
+                android:id="@+id/three_point_button_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two_point_button_a"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="takeAshot"
+                android:text="+ 3 pts" />
+
+            <Button
+                android:id="@+id/freethrow_button_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/three_point_button_a"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="takeAshot"
+                android:text="=Freethrow" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:padding="1dp"
+            >
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teamName_textview_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="TEAM B"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/score_textview_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teamName_textview_b"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textSize="32dp" />
+
+            <Button
+                android:id="@+id/two_point_button_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/score_textview_b"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="takeAshot"
+                android:text="2 pts" />
+
+
+            <Button
+                android:id="@+id/three_point_button_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two_point_button_b"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="takeAshot"
+                android:text="3 pts" />
+
+            <Button
+                android:id="@+id/freethrow_button_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/three_point_button_b"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="takeAshot"
+                android:text="Free Throw" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="RESET" />
+
+
+</LinearLayout>
