@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
         score2Pts += 2;
         return teamA;
-
         //increase score
 
     }
